@@ -42,3 +42,10 @@ for t in range(block_size):
     context = x[:t+1]
     target = y[t]
     print(f"when input is {context} the target: {target}")
+
+
+
+import torch 
+data = torch.tensor(encode(text), dtype=torch.long)
+print(data.shape, data.dtype)
+print(data[:1000]) # the 1000 characters we looked at earier will to the GPT look like this
