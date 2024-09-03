@@ -9,10 +9,11 @@ max_iters = 20000
 eval_interval = 100
 learning_rate = 1e-3
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
+print(f"using device {device}")
 eval_iters = 200
-n_embd = 64
-n_head = 4
-n_layer = 4
+n_embd = 128
+n_head = 8
+n_layer = 8
 dropout = 0.0
 # ------------
 
