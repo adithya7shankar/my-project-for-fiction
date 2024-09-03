@@ -19,8 +19,10 @@ dropout = 0.0
 
 torch.manual_seed(1337)
 
-with open('input.txt', 'r', encoding='utf-8') as f:
-    text = f.read()
+for file in ['input.txt', 'input2.txt']:
+    with open(file, 'r', encoding='utf-8') as f:
+        text = f.read()
+
 
 # here are all the unique characters that occur in this text
 chars = sorted(list(set(text)))
